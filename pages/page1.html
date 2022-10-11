@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Box</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+    $('input[name="fav_color"]').on('click', function() {
+        if ($(this).val() == 'color') {
+            $('#textboxes2').hide();
+            $('#textboxes1').show();
+        }
+        else {
+            $('#textboxes1').hide();
+            $('#textboxes2').show();
+        }
+    });
+});
+</script>
+
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <h1 style="font-size:3.5rem"><span>ZD &nbsp;</span> DAMASO</h1>
+    <div class="input_card1">
+        <form action="/action_page.php">
+
+            <label for="boxmodel">Box Model</label>
+            <input type="text" id="boxmodel" name="boxmodel"><br><br>
+            <label for="Material">Material </label><br>
+            <label for="Outside_Material">Outside Material </label>
+            <select name="Outside_Material_names" id="Outside_Material_names">
+            <option value="Printed">Printed</option>
+            <option value="Special">Special</option>
+             </select>
+             <label for="lname">Outside Material Color </label><br>
+             
+             <input type="radio" id="html" name="fav_color" value="color">
+             <label for="html">Color</label><br>
+             <input type="radio" id="css" name="fav_color" value="pantope">
+             <label for="html">Pantope Color</label><br>
+             
+
+             <div id="textboxes1" style="display: none">
+                Color Code <input type="color" name="txtbbx1"/>
+                </div>
+            <div id="textboxes2" style="display: none">
+                    Pantone Color <input type="text" name="txtbbx2"/>
+                    </div>
+            <label for="Side_Material">Side Material </label>
+            <select name="Side_Material_names" id="Outside_Material_names">
+                <option value="Printed">Printed</option>
+                <option value="Special">Special</option>
+                 </select>
+            <label for="Inside_Material">Inside Material </label>
+                 <select name="Inside_Material_names" id="Outside_Material_names">
+                     <option value="Pigpel">Pigpel</option>
+                     <option value="Suede">Suede</option>
+                     <option value="Flock">Flock</option>
+                      </select>
+            <label for="Side_Material">Logo</label>
+            <select name="Inside_Material_names" id="Outside_Material_names">
+                <option value="Printed">Printed</option>
+                <option value="Foiling">Foiling</option>
+                <option value="Embossed">Embossed</option>
+                 </select>
+                 <label for="Side_Material">Type of Logo</label><br>
+                 <input type="radio" id="html" name="Type_logo" value="glossy">
+                 <label for="html">Glossy</label><br>
+                 <input type="radio" id="css" name="Type_logo" value="Matt">
+                 <label for="html">Matt</label><br>
+                 <label for="Side_Material">Upload Logo</label><br>
+                 <input type="file"  name="file_input" id="css" accept="image/png, image/jpeg" > <br>
+                 <label for="html">Size(L X W X H)</label><br>
+                 <input type="text" id="css" name="fav_color" >
+                 <label for="html">Quantity</label><br>
+                 <input type="number" id="css" name="fav_color" >
+                 <label for="html">Comment</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+
+                 <h1>Customer Details</h1>
+                 <label for="html">Company Name</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+                  <label for="html">Contact Name</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" > 
+                 <label for="html">VAT Number</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+                  <label for="html">Telephone Number</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+                  <label for="html">Email</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" > 
+                 <label for="html">Address</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+                  <label for="html">Mobile Number</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" > 
+                 <label for="html">ZIP/Postal Code</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+                 <label for="html">City</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+                 <label for="html">State</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+                 <label for="html">Country</label><br>
+                 <input type="text" size="100" id="css" name="fav_color" >
+
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+</body>
+</html>
